@@ -31,12 +31,12 @@ is_token_valid {
 
 action_allowed {
     http_request.method == "GET"
-    glob.match("/balance*", [], http_request.path)
+    glob.match("/balances*", [], http_request.path)
     scopes[_] == "read"
 }
 
 action_allowed {
-    http_request.method == "POST"
-    glob.match("/balance*", [], http_request.path)
+    http_request.method == "PUT"
+    glob.match("/balances*", [], http_request.path)
     scopes[_] == "write"
 }

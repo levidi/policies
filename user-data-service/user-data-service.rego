@@ -31,6 +31,6 @@ is_token_valid {
 
 action_allowed {
     http_request.method == "GET"
-    glob.match("/user-data*", [], http_request.path)
+    glob.match("/users-data*", [], http_request.path)
     scopes[_] == "read"
 }
