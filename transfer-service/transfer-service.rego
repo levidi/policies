@@ -30,13 +30,7 @@ is_token_valid {
 }
 
 action_allowed {
-    http_request.method == "GET"
-    glob.match("/transfer*", [], http_request.path)
-    scopes[_] == "read"
-}
-
-action_allowed {
     http_request.method == "POST"
-    glob.match("/transfer*", [], http_request.path)
+    glob.match("/transfers*", [], http_request.path)
     scopes[_] == "write"
 }
