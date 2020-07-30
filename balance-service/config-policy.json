@@ -1,0 +1,7 @@
+{
+  "namespace": "on-premise",
+  "regoRules": [
+    "allow"
+  ],
+  "regoQueryName": "bank.balance_service"
+}
