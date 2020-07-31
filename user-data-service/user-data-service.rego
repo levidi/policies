@@ -1,4 +1,4 @@
-package bank.user_data_service
+package bank.user-data-service
 
 import input.attributes.request.http as http_request
 
