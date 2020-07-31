@@ -40,3 +40,4 @@ action_allowed {
     glob.match("/balances*", [], http_request.path)
     scopes[_] == "write"
 }
+
