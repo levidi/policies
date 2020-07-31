@@ -1,4 +1,4 @@
-package bank.user_data_service
+package bank.transfer-service
 
 import input.attributes.request.http as http_request
 
@@ -26,11 +26,11 @@ is_token_valid {
     io.jwt.verify_hs256(token, secret)
     now := time.now_ns() / 1000000000
     now < decoded_token.exp
-    decoded_token.aud[_] == "user-data-service"
+    decoded_token.aud[_] == "transfer-service"
 }
 
 action_allowed {
-    http_request.method == "GET"
-    glob.match("/users-data*", [], http_request.path)
-    scopes[_] == "read"
+    http_request.method == "POST"
+    glob.match("/transfers*", [], http_request.path)
+    scopes[_] == "write"
 }
