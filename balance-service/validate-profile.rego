@@ -3,7 +3,7 @@ package bank.balance.service
 
 # import input.attributes.request.http as http_request
 
-default allow = true
+default allow = false
 
 # allow {
 #     is_token_valid
