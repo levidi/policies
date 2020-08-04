@@ -2,6 +2,7 @@ package bank.balance.service
 
 import input.attributes.request.http as http_request
 
+
 default allow = false
 
 allow {
