@@ -3,5 +3,5 @@
   "regoRules": [
     "allow"
   ],
-  "regoQueryName": "bank.user-data-service"
+  "regoQueryName": "bank.user.data.service"
 }

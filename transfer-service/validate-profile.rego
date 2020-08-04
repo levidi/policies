@@ -1,4 +1,4 @@
-package bank.transfer-service
+package bank.transfer.service
 
 import input.attributes.request.http as http_request
 

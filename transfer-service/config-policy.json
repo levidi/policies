@@ -3,5 +3,5 @@
   "regoRules": [
     "allow"
   ],
-  "regoQueryName": "bank.transfer-service"
+  "regoQueryName": "bank.transfer.service"
 }

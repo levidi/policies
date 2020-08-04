@@ -3,5 +3,5 @@
   "regoRules": [
     "allow"
   ],
-  "regoQueryName": "bank.balance-service"
+  "regoQueryName": "bank.balance.service"
 }

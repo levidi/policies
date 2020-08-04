@@ -1,4 +1,4 @@
-package bank.balance-service
+package bank.balance.service
 
 import input.attributes.request.http as http_request
 
